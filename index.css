@@ -97,6 +97,7 @@ body{
 
 .img-proyect{
     max-width: 100%;
+    height: auto;
     border-radius: .3rem;
 }
 
