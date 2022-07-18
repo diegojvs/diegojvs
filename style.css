@@ -1,0 +1,19 @@
+:root {
+	--background-color-dark: #111;
+	--background-color-light: #eee;
+	--title-color-theme-dark: #ddd;
+	--title-color-theme-light: #222;
+	--text-color-theme-dark: #ccc;
+	--text-color-theme-light: #333;
+}
+
+body {
+	background-color: var(--background-color-dark);
+	display: grid;
+	grid-template-columns: 30% 1fr;
+	grid-area: 'nav main';
+}
+
+h1 {
+	color: var(--title-color-theme-dark);
+}
