@@ -1,0 +1,265 @@
+html,
+body {
+	height: 100%;
+	scroll-behavior: smooth;
+	color: #fff;
+}
+
+@media only screen and (max-width: 400px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+body {
+	background-color: #171717;
+}
+
+.Main {
+	height: 100%;
+	width: 100%;
+}
+
+.Section {
+	margin: 0 auto;
+	height: 100%;
+	width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+	.Section {
+		width: 90%;
+	}
+}
+
+.First {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.Title {
+	font-size: 8rem;
+	margin-bottom: 1rem;
+	animation: opening 2s;
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.Title {
+		font-size: 4rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.Title {
+		font-size: 4rem;
+	}
+}
+
+.Subtitle {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	animation: opening 2s;
+	text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+	.Subtitle {
+		font-size: 2rem;
+	}
+}
+
+.Container-i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 10rem;
+	animation: opening 2s;
+}
+
+a {
+	text-decoration: none;
+}
+
+.i {
+	display: block;
+	color: #fff;
+	font-size: 3rem;
+	margin: 0 auto;
+	animation: down 2s infinite;
+}
+
+@keyframes opening {
+	from {
+		transform: translatex(-100%);
+	}
+	to {
+		transform: translatex(0%);
+	}
+}
+
+@keyframes down {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+.Container {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	width: 100%;
+	margin-top: 10rem;
+}
+
+.Card {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	width: 30%;
+	height: 30%;
+	margin: 0 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.Card {
+		width: 90%;
+	}
+}
+
+.Position {
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+.Company,
+.Date,
+.Description {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.Span {
+	font-weight: lighter;
+	font-size: 1rem;
+}
+
+.Container-skills {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 3rem;
+	width: 100%;
+	margin-top: 10rem;
+}
+
+@media only screen and (max-width: 400px) {
+	.Container-skills:last-child {
+		margin-bottom: 10rem;
+	}
+}
+
+.Card-Skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 1rem;
+}
+
+.i-Skills {
+	font-size: 5rem;
+}
+
+.Name-skills {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.Container-projects {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 3rem;
+	width: 100%;
+}
+
+.Card-projects {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: 'img' 'title' 'description' 'icon';
+	width: 30%;
+	border: 2px solid #fff;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+	.Card-projects {
+		width: 90%;
+		margin-bottom: 1rem;
+	}
+}
+
+.a-project-img {
+	grid-area: img;
+	display: block;
+	width: 100%;
+}
+
+.project-img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.Name-projects {
+	grid-area: title;
+	display: block;
+	width: 100%;
+	padding: 0rem 1rem;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 1.3rem;
+}
+
+.Description-projects {
+	grid-area: description;
+	display: block;
+	padding: 1rem;
+	margin: 0;
+	color: #fff;
+	font-weight: lighter;
+	font-size: 1.2rem;
+}
+
+.Container-projects-icons {
+	grid-area: icon;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+}
+
+.i-project-icon {
+	color: #fff;
+	font-size: 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+	.Skills {
+		height: auto;
+	}
+}
