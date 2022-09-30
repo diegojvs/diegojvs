@@ -116,9 +116,16 @@ a {
 .Container {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 1rem;
 	width: 100%;
 	margin-top: 10rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.Container {
+		margin-top: 1rem;
+	}
 }
 
 .Card {
@@ -166,7 +173,7 @@ a {
 
 @media only screen and (max-width: 400px) {
 	.Container-skills:last-child {
-		margin-bottom: 10rem;
+		margin-top: 1rem;
 	}
 }
 
@@ -259,6 +266,8 @@ a {
 }
 
 @media only screen and (max-width: 400px) {
+	.Experience,
+	.Education,
 	.Skills {
 		height: auto;
 	}
