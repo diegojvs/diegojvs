@@ -208,14 +208,22 @@ a {
 	grid-template-columns: 1fr;
 	grid-template-areas: 'img' 'title' 'description' 'icon';
 	width: 30%;
+	height: 30rem;
 	border: 2px solid #fff;
 	border-radius: 1rem;
 	overflow: hidden;
 }
 
+@media only screen and (max-width: 1200px) {
+	.Card-projects {
+		height: auto;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	.Card-projects {
 		width: 90%;
+		height: auto;
 		margin-bottom: 1rem;
 	}
 }
