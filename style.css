@@ -274,8 +274,12 @@ a {
 }
 
 @media only screen and (max-width: 400px) {
-	.Experience,
-	.Education,
+	.Skills {
+		height: 100%;
+	}
+}
+
+@media only screen and (max-width: 400px) and (max-height: 680px) {
 	.Skills {
 		height: auto;
 	}
